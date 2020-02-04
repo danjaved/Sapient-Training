@@ -1,0 +1,12 @@
+package com.sapient.pack1;
+
+public class ClassClient {
+	public static void main(String[] args) {
+		PublicClass obj=new PublicClass();
+		obj.publicMethod();
+		obj.protectedMethod();
+		obj.defaultMethod();
+		//obj.privateMethod();
+
+	}
+}

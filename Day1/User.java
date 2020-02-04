@@ -7,7 +7,7 @@ public class User
     {
         Scanner sc=new Scanner(System.in);
      
-        Bank bank=new Bank();
+        BankAccount BankAccount=new BankAccount();
         int balance=0;
        
       
@@ -17,15 +17,15 @@ public class User
         int ch=sc.nextInt();
         switch(ch)
         {
-            case 1:  balance=bank.displayBalance();
+            case 1:  balance=BankAccount.displayBalance();
                         break;
             case 2 :    System.out.print("Enter amount : ");
                         amount=sc.nextInt();
-                       balance=bank.withdraw(amount);
+                       balance=BankAccount.withdraw(amount);
                        break;
             case 3 :   System.out.print("Enter amount : ");
                         amount=sc.nextInt();
-                       balance=bank.deposite(amount);
+                       balance=BankAccount.deposite(amount);
                      break;
             default : System.out.println("invalid choice");
                         return;
